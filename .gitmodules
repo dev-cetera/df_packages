@@ -1,0 +1,87 @@
+[submodule "dart_package_template"]
+	path = dart_package_template
+	url = ./dart_package_template
+[submodule "df_bijective_uuid_mapper"]
+	path = df_bijective_uuid_mapper
+	url = ./df_bijective_uuid_mapper
+[submodule "df_bulk_replace"]
+	path = df_bulk_replace
+	url = ./df_bulk_replace
+[submodule "df_cleanup"]
+	path = df_cleanup
+	url = ./df_cleanup
+[submodule "df_collection"]
+	path = df_collection
+	url = ./df_collection
+[submodule "df_color"]
+	path = df_color
+	url = ./df_color
+[submodule "df_config"]
+	path = df_config
+	url = ./df_config
+[submodule "df_debouncer"]
+	path = df_debouncer
+	url = ./df_debouncer
+[submodule "df_di"]
+	path = df_di
+	url = ./df_di
+[submodule "df_gen_core"]
+	path = df_gen_core
+	url = ./df_gen_core
+[submodule "df_generate_dart_indexes"]
+	path = df_generate_dart_indexes
+	url = ./df_generate_dart_indexes
+[submodule "df_generate_dart_models"]
+	path = df_generate_dart_models
+	url = ./df_generate_dart_models
+[submodule "df_generate_dart_models_core"]
+	path = df_generate_dart_models_core
+	url = ./df_generate_dart_models_core
+[submodule "df_generate_header_comments"]
+	path = df_generate_header_comments
+	url = ./df_generate_header_comments
+[submodule "df_generate_screen"]
+	path = df_generate_screen
+	url = ./df_generate_screen
+[submodule "df_gps_math"]
+	path = df_gps_math
+	url = ./df_gps_math
+[submodule "df_localization"]
+	path = df_localization
+	url = ./df_localization
+[submodule "df_log"]
+	path = df_log
+	url = ./df_log
+[submodule "df_patterns"]
+	path = df_patterns
+	url = ./df_patterns
+[submodule "df_pod"]
+	path = df_pod
+	url = ./df_pod
+[submodule "df_rust_interop_web"]
+	path = df_rust_interop_web
+	url = ./df_rust_interop_web
+[submodule "df_scalable"]
+	path = df_scalable
+	url = ./df_scalable
+[submodule "df_screen"]
+	path = df_screen
+	url = ./df_screen
+[submodule "df_screen_core"]
+	path = df_screen_core
+	url = ./df_screen_core
+[submodule "df_string"]
+	path = df_string
+	url = ./df_string
+[submodule "df_type"]
+	path = df_type
+	url = ./df_type
+[submodule "df_web_device_info"]
+	path = df_web_device_info
+	url = ./df_web_device_info
+[submodule "df_widgets"]
+	path = df_widgets
+	url = ./df_widgets
+[submodule "pub.dev_package_workflow"]
+	path = pub.dev_package_workflow
+	url = ./pub.dev_package_workflow
