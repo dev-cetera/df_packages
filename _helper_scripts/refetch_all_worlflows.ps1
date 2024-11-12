@@ -13,7 +13,7 @@
 # Iterates through all directories in the current directory and refetches the
 # GitHub workflows if they contain a .github directory.
 
-$repoUrl = "https://github.com/robmllze/pub.dev_package_workflow.git"
+$repoUrl = "https://github.com/DevCetra/pub.dev_package_workflow.git"
 
 Get-ChildItem -Directory | ForEach-Object {
     $currentDir = $_.FullName
