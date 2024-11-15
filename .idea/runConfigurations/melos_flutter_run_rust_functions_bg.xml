@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Flutter Run -&gt; 'rust_functions_bg'" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/packages/df_rust_interop_web/flutter_example/lib/main.dart" />
+    <method v="2" />
+  </configuration>
+</component>

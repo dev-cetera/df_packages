@@ -1,0 +1,4 @@
+name: df_packages
+
+packages:
+  - packages/**
