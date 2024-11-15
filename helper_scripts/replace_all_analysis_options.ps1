@@ -12,13 +12,14 @@
 
 # Get the current working directory (parent directory where all projects are located)
 $parentDirectory = Get-Location
+$packagesDirectory = "$parentDirectory/packages"
 
 # Define the paths to the analysis options templates for Dart and Flutter
-$dartTemplatePath = "$parentDirectory/dart_package_template/analysis_options.yaml"
-$flutterTemplatePath = "$parentDirectory/dart_package_template/flutter_analysis_options.yaml"
+$dartTemplatePath = "$packagesDirectory/dart_package_template/analysis_options.yaml"
+$flutterTemplatePath = "$packagesDirectory/dart_package_template/flutter_analysis_options.yaml"
 
 # Iterate through all directories in the current directory
-Get-ChildItem -Path $parentDirectory -Directory | ForEach-Object {
+Get-ChildItem -Path $packagesDirectory  -Directory | ForEach-Object {
     $repoPath = $_.FullName
     $repoName = $_.Name
     $pubspecPath = "$repoPath/pubspec.yaml"
@@ -49,7 +50,8 @@ Get-ChildItem -Path $parentDirectory -Directory | ForEach-Object {
             $analysisPath = "$repoPath/analysis_options.yaml"
             Copy-Item -Path $flutterTemplatePath -Destination $analysisPath -Force
             Write-Host "Updated analysis_options.yaml for Flutter project in $repoPath" -ForegroundColor Green
-        } else {
+        }
+        else {
             Write-Host "Flutter template not found at $flutterTemplatePath" -ForegroundColor Red
         }
 
@@ -65,7 +67,8 @@ Get-ChildItem -Path $parentDirectory -Directory | ForEach-Object {
             $analysisPath = "$repoPath/analysis_options.yaml"
             Copy-Item -Path $dartTemplatePath -Destination $analysisPath -Force
             Write-Host "Updated analysis_options.yaml for Dart project in $repoPath" -ForegroundColor Green
-        } else {
+        }
+        else {
             Write-Host "Dart template not found at $dartTemplatePath" -ForegroundColor Red
         }
 
