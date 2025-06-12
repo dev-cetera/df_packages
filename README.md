@@ -30,8 +30,11 @@ This installs dependencies internally, and links all packages locally.
 melos bootstrap
 ```
 
-## TODO:
+### Publishing
 
-- [ ] The helper scripts need to be fixed. They were used before integrating melos, and are now outdated.
-- [ ] Melos integration is untested. It needs to be tested to ensure it works as expected.
-- [ ] Enable publishing through GitHub actions.
+This publishes all packages that are ready to `pub.dev`.
+
+```zsh
+melos publish --dry-run
+melos publish
+```

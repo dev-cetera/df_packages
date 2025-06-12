@@ -1,7 +1,7 @@
 ##.title
 ## ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ##
-## Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+## Dart/Flutter (DF) Packages by dev-cetera.com & contributors. The use of this
 ## source code is governed by an MIT-style license described in the LICENSE
 ## file located in this project's root directory.
 ##
@@ -13,7 +13,7 @@
 # Iterates through all directories in the current directory and refetches the
 # GitHub workflows if they contain a .github directory.
 
-$repoUrl = "https://github.com/DevCetra/pub.dev_package_workflow.git"
+$repoUrl = "https://github.com/dev-cetera/pub.dev_package_workflow.git"
 
 Get-ChildItem -Directory | ForEach-Object {
     $currentDir = $_.FullName
