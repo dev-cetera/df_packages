@@ -36,5 +36,5 @@ This publishes all packages that are ready to `pub.dev`.
 
 ```zsh
 melos publish --dry-run
-dart pub publish --force
+melos publish --n
 ```
