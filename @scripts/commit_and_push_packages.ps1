@@ -35,10 +35,10 @@ Write-Host "Found $($gitDirs.Count) repositories. Starting processing..."
 # Iterate through each found Git directory.
 foreach ($gitDir in $gitDirs) {
     $repoPath = $gitDir.Parent.FullName
-    $repoName = $gitDir.Parent.Name
+    $projectName = $gitDir.Parent.Name
 
     # --- Print a clear header for the current repository ---
-    Write-Host "Considering: $repoName..." -ForegroundColor Cyan
+    Write-Host "Processing: $projectName..." -ForegroundColor Cyan
 
     # Use Push/Pop-Location for robust directory navigation.
     Push-Location -Path $repoPath
@@ -53,9 +53,9 @@ foreach ($gitDir in $gitDirs) {
     $gitStatus = git status --porcelain 2>$null
     if ($null -ne $gitStatus) {
         # Default to 'y' unless user explicitly types 'n'
-        $commitConfirm = Read-Host "Repo '$repoName' has uncommitted changes. Commit them? [Y/n]"
+        $commitConfirm = Read-Host "Repo '$projectName' has uncommitted changes. Commit them? [Y/n]"
         if ($commitConfirm.ToLower() -ne 'n') {
-            $commitMessage = Read-Host "Enter commit message for '$repoName' (or press Enter for 'update')"
+            $commitMessage = Read-Host "Enter commit message for '$projectName' (or press Enter for 'update')"
             if ([string]::IsNullOrWhiteSpace($commitMessage)) {
                 $commitMessage = "update"
             }
@@ -63,7 +63,7 @@ foreach ($gitDir in $gitDirs) {
             git commit -m $commitMessage
         }
         else {
-            Write-Host "SKIP: User chose not to commit changes in '$repoName'." -ForegroundColor Yellow
+            Write-Host "SKIP: User chose not to commit changes in '$projectName'." -ForegroundColor Yellow
         }
     }
 
@@ -72,11 +72,11 @@ foreach ($gitDir in $gitDirs) {
     $branchStatus = git status --short --branch 2>$null
     
     if ($branchStatus -match '\[ahead\s+\d+\]') {
-        $pushPrompt = "Repo '$repoName': Push commits? [Y/n]" # Fallback prompt
+        $pushPrompt = "Repo '$projectName': Push commits? [Y/n]" # Fallback prompt
         if ($branchStatus -match '##\s(.*?)\.\.\.(.*?)\s') {
             $localBranch = $matches[1]
             $remoteInfo = $matches[2]
-            $pushPrompt = "Repo '$repoName': Push local branch '$localBranch' to '$remoteInfo'? [Y/n]"
+            $pushPrompt = "Repo '$projectName': Push local branch '$localBranch' to '$remoteInfo'? [Y/n]"
         }
 
         # Default to 'y' unless user explicitly types 'n'
@@ -85,11 +85,11 @@ foreach ($gitDir in $gitDirs) {
             git push
         }
         else {
-            Write-Host "SKIP: User chose not to push commits from '$repoName'." -ForegroundColor Yellow
+            Write-Host "SKIP: User chose not to push commits from '$projectName'." -ForegroundColor Yellow
         }
     }
     elseif ($branchStatus -notlike "*...*") {
-        Write-Host "INFO: Branch in '$repoName' is not tracking a remote. Cannot check for unpushed commits." -ForegroundColor Gray
+        Write-Host "INFO: Branch in '$projectName' is not tracking a remote. Cannot check for unpushed commits." -ForegroundColor Gray
     }
 
     # Return to the previous directory before processing the next repo.

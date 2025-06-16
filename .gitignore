@@ -19,8 +19,10 @@
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 **/pubspec_overrides.yaml
-**/node_modules
 
 # Don't support IntelliJ.
 **/*.iml
 **/*.idea/
+
+# custom_lint
+custom_lint.log

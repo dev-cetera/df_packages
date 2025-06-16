@@ -9,6 +9,10 @@
 			"path": "../"
 		},
 		{
+			"name": "dart_package_template",
+			"path": "../dart_package_template"
+		},
+		{
 			"name": "df_bijective_uuid_mapper",
 			"path": "../packages/df_bijective_uuid_mapper"
 		},

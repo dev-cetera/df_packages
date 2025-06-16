@@ -36,7 +36,7 @@ foreach ($projectFile in $projectFiles) {
     $projectName = $projectFile.Directory.Name
 
     # --- Print a clear header for the current project ---
-    Write-Host "Considering: $projectName ($projectPath)" -ForegroundColor Cyan
+    Write-Host "Processing: $projectName..." -ForegroundColor Cyan
 
     # Use Push/Pop-Location for robust directory navigation.
     Push-Location -Path $projectPath
