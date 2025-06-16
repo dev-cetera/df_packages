@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "@scripts",
+			"path": "../@scripts"
+		},
+		{
 			"name": "df_packages",
 			"path": "../"
 		},

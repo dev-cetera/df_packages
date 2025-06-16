@@ -10,13 +10,16 @@
 ## ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ##.title~
 
-# Iterates through all directories in the packages/folder and adds them as
-# submodules if they contain a .git directory.
-Get-ChildItem -Path "../packages" -Directory | ForEach-Object {
-    if (-Not (Test-Path "$($_.FullName)/.git")) {
-        Write-Host "Skipping $($_.FullName) (no Git repository found)" -ForegroundColor Yellow
-        return
-    }
+**/.dart_tool/
+**/.DS_Store
+**/build/
+**/pubspec.lock
+**/.github/.git
+**/.metadata
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec_overrides.yaml
 
-    git submodule add "./$($_.Name)"
-}
+# Don't support IntelliJ.
+**/*.iml
+**/*.idea/
