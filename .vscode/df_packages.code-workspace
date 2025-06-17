@@ -25,6 +25,10 @@
 			"path": "../packages/df_bulk_replace"
 		},
 		{
+			"name": "df_combine_files",
+			"path": "../packages/df_combine_files"
+		},
+		{
 			"name": "df_cleanup",
 			"path": "../packages/df_cleanup"
 		},
