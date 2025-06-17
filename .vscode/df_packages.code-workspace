@@ -6,11 +6,15 @@
 		},
 		{
 			"name": "df_packages",
-			"path": "../"
+			"path": ".."
 		},
 		{
 			"name": "dart_package_template",
 			"path": "../dart_package_template"
+		},
+		{
+			"name": "pub.dev_package_workflow",
+			"path": "../pub.dev_package_workflow"
 		},
 		{
 			"name": "df_bijective_uuid_mapper",
