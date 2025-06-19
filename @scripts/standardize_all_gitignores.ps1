@@ -45,7 +45,7 @@ foreach ($projectFile in $projectFiles) {
     $projectPath = $projectFile.Directory.FullName
     $projectName = $projectFile.Directory.Name
 
-    Write-Host "Processing: $projectNam..." -ForegroundColor Cyan
+    Write-Host "Processing: $projectName..." -ForegroundColor Cyan
 
     # Robustly skip the template directory itself by comparing full paths
     if ($projectPath -eq $templateParentDirFullPath) {

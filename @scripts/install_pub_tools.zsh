@@ -1,4 +1,4 @@
-# Install DF tools.
+# Install tools by github.com/dev-cetera.
 dart pub global deactivate df_generate_dart_indexes; dart pub global activate df_generate_dart_indexes
 dart pub global deactivate df_generate_dart_models; dart pub global activate df_generate_dart_models
 dart pub global deactivate df_generate_header_comments; dart pub global activate df_generate_header_comments

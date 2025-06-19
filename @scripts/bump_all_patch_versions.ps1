@@ -39,7 +39,7 @@ foreach ($pubspecFile in $pubspecFiles) {
     $directoryName = $pubspecFile.Directory.Name
 
     # --- Print a clear header for the current package ---
-    Write-Host "`nProcessing: $directoryName..." -ForegroundColor Cyan
+    Write-Host "`nProcessing: $packagePath..." -ForegroundColor Cyan
 
     # Read the entire content of the pubspec.yaml file
     $pubspecContent = Get-Content -Raw -Path $pubspecFile.FullName
@@ -92,11 +92,13 @@ foreach ($pubspecFile in $pubspecFiles) {
             
             Write-Host "SUCCESS: Bumped version for '$packageNameFromSpec' from $versionString to $newVersion." -ForegroundColor Green
 
-        } catch {
+        }
+        catch {
             Write-Host "ERROR: Could not parse version parts for '$packageNameFromSpec' ('$coreVersion'). Error: $($_.Exception.Message)" -ForegroundColor Red
             continue
         }
-    } else {
+    }
+    else {
         Write-Host "SKIP: Could not find a 'version:' line in pubspec.yaml for '$packageNameFromSpec'." -ForegroundColor Yellow
     }
 }

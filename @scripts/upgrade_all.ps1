@@ -84,7 +84,6 @@ foreach ($projectFile in $projectFiles) {
     $didBackupOverrideFile = $false
     
     try {
-        # --- THE CORRECTED LOGIC: NO MERGING ---
         # If an override file exists, simply rename it to disable it for this operation.
         if (Test-Path $overrideFilePath) {
             Write-Host "Found existing '$overrideFilePath'. Temporarily disabling it..." -ForegroundColor Yellow
