@@ -13,7 +13,7 @@
 
 # --- Configuration ---
 # Define the paths to search for override files.
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Script Body ---
 Write-Host "Searching for all 'pubspec_overrides.yaml' files to delete..."

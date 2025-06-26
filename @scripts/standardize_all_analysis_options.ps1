@@ -26,7 +26,7 @@ if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
 Import-Module powershell-yaml
 
 # --- Configuration ---
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 $templateDirRelativePath = "../dart_package_template"
 
 # --- Script Body ---

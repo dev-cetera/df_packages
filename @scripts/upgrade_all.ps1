@@ -22,7 +22,7 @@ if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
 Import-Module powershell-yaml
 
 # --- Configuration ---
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Helper Function ---
 function Get-FlutterDependencyConstraints {

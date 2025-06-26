@@ -21,7 +21,7 @@
 
 # --- Configuration ---
 # Define the paths to search for your Dart packages.
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Script Body ---
 

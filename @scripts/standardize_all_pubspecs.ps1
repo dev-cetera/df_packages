@@ -16,7 +16,7 @@
 #>
 
 # --- Configuration ---
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 $desiredEnvironmentSdkConstraint = 'sdk: ">=3.5.0 <4.0.0"'
 $desiredHomepage = "homepage: https://dev-cetera.com/"
 $desiredFunding = @(

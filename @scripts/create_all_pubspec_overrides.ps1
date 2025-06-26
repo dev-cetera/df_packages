@@ -28,7 +28,7 @@ if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
 Import-Module powershell-yaml
 
 # --- Configuration ---
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Script Body ---
 Write-Host "Searching for all local Dart/Flutter projects..."

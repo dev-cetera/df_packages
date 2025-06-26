@@ -14,7 +14,7 @@
 
 # --- Configuration ---
 # Define the paths to search for Dart/Flutter projects.
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Script Body ---
 

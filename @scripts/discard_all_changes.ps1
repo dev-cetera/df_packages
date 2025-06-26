@@ -20,7 +20,7 @@
 
 # --- Configuration ---
 # Define the paths to search for Git repositories.
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 
 # --- Script Body ---
 Write-Host "Searching for Git repositories to check for local changes..."

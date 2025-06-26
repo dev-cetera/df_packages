@@ -9,7 +9,7 @@
 #>
 
 # --- Configuration ---
-$searchPaths = ".", "../packages"
+$searchPaths = "packages", "../packages"
 $templateGitignoreRelativePath = "../dart_package_template/.gitignore"
 
 # --- Script Body ---
