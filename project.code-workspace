@@ -2,147 +2,147 @@
 	"folders": [
 		{
 			"name": "@scripts",
-			"path": "../@scripts"
+			"path": "@scripts"
 		},
 		{
 			"name": "df_packages",
-			"path": ".."
+			"path": "."
 		},
 		{
 			"name": "dart_package_template",
-			"path": "../dart_package_template"
+			"path": "dart_package_template"
 		},
 		{
 			"name": "pub.dev_package_workflow",
-			"path": "../pub.dev_package_workflow"
+			"path": "pub.dev_package_workflow"
 		},
 		{
 			"name": "df_bijective_uuid_mapper",
-			"path": "../packages/df_bijective_uuid_mapper"
+			"path": "packages/df_bijective_uuid_mapper"
 		},
 		{
 			"name": "df_bulk_replace",
-			"path": "../packages/df_bulk_replace"
+			"path": "packages/df_bulk_replace"
 		},
 		{
 			"name": "df_combine_files",
-			"path": "../packages/df_combine_files"
+			"path": "packages/df_combine_files"
 		},
 		{
 			"name": "df_cleanup",
-			"path": "../packages/df_cleanup"
+			"path": "packages/df_cleanup"
 		},
 		{
 			"name": "df_collection",
-			"path": "../packages/df_collection"
+			"path": "packages/df_collection"
 		},
 		{
 			"name": "df_color",
-			"path": "../packages/df_color"
+			"path": "packages/df_color"
 		},
 		{
 			"name": "df_config",
-			"path": "../packages/df_config"
+			"path": "packages/df_config"
 		},
 		{
 			"name": "df_debouncer",
-			"path": "../packages/df_debouncer"
+			"path": "packages/df_debouncer"
 		},
 		{
 			"name": "df_di",
-			"path": "../packages/df_di"
+			"path": "packages/df_di"
 		},
 		{
 			"name": "df_gen_core",
-			"path": "../packages/df_gen_core"
+			"path": "packages/df_gen_core"
 		},
 		{
 			"name": "df_generate_dart_indexes",
-			"path": "../packages/df_generate_dart_indexes"
+			"path": "packages/df_generate_dart_indexes"
 		},
 		{
 			"name": "df_generate_dart_models",
-			"path": "../packages/df_generate_dart_models"
+			"path": "packages/df_generate_dart_models"
 		},
 		{
 			"name": "df_generate_dart_models_core",
-			"path": "../packages/df_generate_dart_models_core"
+			"path": "packages/df_generate_dart_models_core"
 		},
 		{
 			"name": "df_generate_header_comments",
-			"path": "../packages/df_generate_header_comments"
+			"path": "packages/df_generate_header_comments"
 		},
 		{
 			"name": "df_generate_screen",
-			"path": "../packages/df_generate_screen"
+			"path": "packages/df_generate_screen"
 		},
 		{
 			"name": "df_gps_math",
-			"path": "../packages/df_gps_math"
+			"path": "packages/df_gps_math"
 		},
 		{
 			"name": "df_localization",
-			"path": "../packages/df_localization"
+			"path": "packages/df_localization"
 		},
 		{
 			"name": "df_log",
-			"path": "../packages/df_log"
+			"path": "packages/df_log"
 		},
 		{
 			"name": "df_plugins",
-			"path": "../packages/df_plugins"
+			"path": "packages/df_plugins"
 		},
 		{
 			"name": "df_pod",
-			"path": "../packages/df_pod"
+			"path": "packages/df_pod"
 		},
 		{
 			"name": "df_pwa_utils",
-			"path": "../packages/df_pwa_utils"
+			"path": "packages/df_pwa_utils"
 		},
 		{
 			"name": "df_router",
-			"path": "../packages/df_router"
+			"path": "packages/df_router"
 		},
 		{
 			"name": "df_safer_dart",
-			"path": "../packages/df_safer_dart"
+			"path": "packages/df_safer_dart"
 		},
 		{
 			"name": "df_safer_dart_annotations",
-			"path": "../packages/df_safer_dart_annotations"
+			"path": "packages/df_safer_dart_annotations"
 		},
 		{
 			"name": "df_safer_dart_lints",
-			"path": "../packages/df_safer_dart_lints"
+			"path": "packages/df_safer_dart_lints"
 		},
 		{
 			"name": "df_scalable",
-			"path": "../packages/df_scalable"
+			"path": "packages/df_scalable"
 		},
 		{
 			"name": "df_screen",
-			"path": "../packages/df_screen"
+			"path": "packages/df_screen"
 		},
 		{
 			"name": "df_screen_core",
-			"path": "../packages/df_screen_core"
+			"path": "packages/df_screen_core"
 		},
 		{
 			"name": "df_string",
-			"path": "../packages/df_string"
+			"path": "packages/df_string"
 		},
 		{
 			"name": "df_type",
-			"path": "../packages/df_type"
+			"path": "packages/df_type"
 		},
 		{
 			"name": "df_web_device_info",
-			"path": "../packages/df_web_device_info"
+			"path": "packages/df_web_device_info"
 		},
 		{
 			"name": "df_widgets",
-			"path": "../packages/df_widgets"
+			"path": "packages/df_widgets"
 		}
 	],
 	"settings": {}
