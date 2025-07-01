@@ -21,7 +21,9 @@ $desiredEnvironmentSdkConstraint = 'sdk: ">=3.5.0 <4.0.0"'
 $desiredHomepage = "homepage: https://dev-cetera.com/"
 $desiredFunding = @(
     "funding:",
-    "  - https://www.buymeacoffee.com/dev_cetera"
+    "- https://www.buymeacoffee.com/dev_cetera",
+    "- https://www.patreon.com/c/RobertMollentze"
+    "- https://github.com/sponsors/robmllze"
 )
 
 # --- Helper Function to get and clean the Git URL ---
