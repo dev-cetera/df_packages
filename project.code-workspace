@@ -53,6 +53,10 @@
 			"path": "packages/df_di"
 		},
 		{
+			"name": "df_flutter_services",
+			"path": "packages/df_flutter_services"
+		},
+		{
 			"name": "df_gen_core",
 			"path": "packages/df_gen_core"
 		},
