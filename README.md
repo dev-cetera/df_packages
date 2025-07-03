@@ -1,40 +1,43 @@
 # DF Packages
 
-A project designed to help manage all df packages from one location. It uses [melos](https://pub.dev/packages/melos) to manage the packages, as well as additional helper scripts. Please read the melos documentation [here](https://melos.invertase.dev/~melos-latest/) for more information.
+A project designed to help manage all df packages from one location.
 
-## Melos Quick-Notes
+## Public Repo Setup
 
-### Installing
-
-This installs melos onto your system, so you can run the `melos` command.
-
-```zsh
-dart pub global activate melos
+```sh
+brew install gh
+gh auth login
+git init
+git add .
+git commit -m "Initial commit"
+gh repo create df_generate_d --public
+git remote add origin https://github.com/dev-cetera/YOUR_PROJECT_NAME.git
+git push -u origin main
 ```
 
-You may also want to install the VS Code package [here](https://marketplace.visualstudio.com/items?itemName=blaugold.melos-code).
+## Publishing
 
-### Analyzing
+1. Make your changes.
+1. Run `dart analyze` to check for errors.
+1. Run `dart fix --apply` to apply fixes.
+1. Run `dart format .` to format the code.
+1. Update the version number in `pubspec.yaml`.
+1. Update the version number in `CHANGELOG.md`.
+1. Run `dart pub publish --dry-run` to check for errors.
+1. Run `dart pub publish` to publish the package.
 
-This command checks for any issues.
+## Commmit Tag Descriptions
 
-```zsh
-melos analyze
-```
-
-### Bootstrapping
-
-This installs dependencies internally, and links all packages locally.
-
-```zsh
-melos bootstrap
-```
-
-### Publishing
-
-This publishes all packages that are ready to `pub.dev`.
-
-```zsh
-melos publish --dry-run
-melos publish --n
-```
+- `feat`: New feature or enhancement
+- `fix`: Bug fix or issue resolution
+- `chore`: Routine tasks or maintenance
+- `refactor`: Code improvements (no functionality change)
+- `docs`: Documentation updates
+- `style`: Code style or formatting changes
+- `test`: Tests additions or modifications
+- `build`: Build system or external dependencies changes
+- `perf`: Performance improvements
+- `ci`: Continuous integration configuration changes
+- `revert`: Revert a previous commit
+- `security`: Security-related changes or fixes
+- `release`: Marks a release or version update

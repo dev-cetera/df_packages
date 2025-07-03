@@ -11,7 +11,7 @@
      - '../dart_package_template/flutter_analysis_options.yaml' (for Flutter projects)
   2. It recursively finds all projects by looking for 'pubspec.yaml' files.
   3. It skips the 'dart_package_template' project itself.
-  4. For each project, it checks if it's a Dart or Flutter project.
+  4. For each project, it checks if it's a Dart or Flutter project by inspecting the pubspec.
   5. It then copies the corresponding template into the project, naming it
      'analysis_options.yaml' and overwriting any existing file.
 #>
@@ -76,7 +76,9 @@ foreach ($projectFile in $projectFiles) {
         # --- Determine Project Type ---
         $pubspecContent = Get-Content -Path $projectFile.FullName -Raw | ConvertFrom-Yaml
         $isFlutterProject = $false
-        if ($null -ne $pubspecObject.dependencies.flutter -and $pubspecObject.dependencies.flutter.sdk -eq 'flutter') {
+        
+        # CORRECTED: Use the correct variable and a more robust check.
+        if ($pubspecContent.dependencies.flutter.sdk -eq 'flutter') {
             $isFlutterProject = $true
         }
 

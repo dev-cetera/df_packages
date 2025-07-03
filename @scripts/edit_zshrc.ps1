@@ -1,0 +1,1 @@
+code ~/.zshrc # Visual Studio Code must be in PATH.
