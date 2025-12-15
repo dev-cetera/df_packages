@@ -22,8 +22,8 @@ $desiredHomepage = "homepage: https://dev-cetera.com/"
 $desiredFunding = @(
     "funding:",
     "- https://www.buymeacoffee.com/dev_cetera",
-    "- https://www.patreon.com/c/t0mb3rr"
-    "- https://github.com/sponsors/t0mb3rr"
+    "- https://www.patreon.com/c/robelator"
+    "- https://github.com/sponsors/robelator"
 )
 
 # --- Helper Function to get and clean the Git URL ---
